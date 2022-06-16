@@ -1,0 +1,252 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+*,
+*:before,
+*:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+:focus,
+:active {
+    outline: none;
+}
+
+a:focus,
+a:active {
+    outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+    display: block;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 14px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+    font-family: inherit;
+}
+
+input::-ms-clear {
+    display: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+
+a,
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+ul li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: inherit;
+    font-weight: 400;
+}
+
+/* -------------------------------------- */
+.wrapper {
+    display: grid;
+    grid-template: minmax(100px, auto) 1fr minmax(100px, auto) / 1fr;
+    min-height: 100%;
+    grid-template-areas: 'header' 'main' 'footer';
+}
+
+.header {
+    background-color: #fff;
+    display: grid;
+    grid-area: header;
+    grid-template: 1fr / 1fr minmax(auto, 265px) minmax(auto, 380px) minmax(auto, 600px) 1fr;
+    align-items: center;
+    &__logo {
+        grid-column: 2 / 3;
+    }
+
+    &__nav {
+        
+    }
+
+    &__list {
+        display: grid;
+        grid-auto-flow: column;
+        justify-items: end;
+    }
+
+    &__link {
+        a {
+            color: #000;
+            font-size: 16px;
+        }
+    }
+
+    &__basket {
+        display: grid;
+        justify-items: end;
+    }
+}
+
+.main {
+    display: grid;
+    grid-area: main;
+}
+
+.section-one {
+    color: #fff;
+    display: grid;
+    grid-template: minmax(auto, 517px) 1fr 1fr minmax(auto, 30px) / minmax(auto, 140px) minmax(auto,1160px) minmax(auto, 140px);
+    align-items: end;
+    background: url('/img/section-one-big-image.png') 0 0/cover no-repeat;;
+
+    &__title {
+        font-size: 18px;
+        grid-column: 2/3;
+        grid-row: 2/3;
+        padding-bottom: 5px;
+    }
+
+    &__subtitle {
+        font-size: 15px;
+        // border-bottom: 1px solid #000;
+        grid-column: 2/3;
+        grid-row: 3/4;
+    }
+}
+
+.products {
+    display: grid;
+    grid-template: minmax(auto, 50px) 1fr minmax(auto, 50px) / minmax(auto, 140px) minmax(auto, 1160px) minmax(auto, 140px);
+    &__items {
+        display: grid;
+        grid-template: 1fr 1fr / repeat(4, minmax(auto, 275px));
+        justify-content: space-between;
+        row-gap: 30px;
+        grid-row: 2/3;
+        grid-column: 2/3;
+    }
+
+    &__item {
+        display: grid;
+        grid-template-rows: repeat(3, auto);
+        gap: 8px;
+    }
+
+    &__image {
+        max-width: 275px;
+        width: 100%;
+    }
+
+    &__name {
+        font-size: 15px;
+        color: #1A1A1A;;
+    }
+
+    &__cost {
+        font-size: 13px;
+        color: #1A1A1A;
+    }
+}
+
+.catalogs {
+    background-color: #CED3CA;
+    display: grid;
+    grid-template: minmax(auto, 113px) auto minmax(auto, 92px) 1fr minmax(auto, 113px) / 1fr;
+    justify-items: center;
+    padding: 0 140px;
+    &__title {
+        font-size: 30px;
+        line-height: 36px;
+        grid-row: 2/3;
+        max-width: 550px;
+        width: 100%;
+    }
+
+    &__items {
+        grid-row: 4/5;
+        display: grid;
+        grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+        column-gap: 116px;
+        row-gap: 70px;
+    }
+    &__name {
+        font-size: 16px;
+        // line-height: 20px;
+    }
+
+    &__item {
+        display: grid;
+        grid-template-rows: repeat(2, auto);
+        row-gap: 5px;
+        &_big {
+            grid-column: span 2;
+        }
+    }
+
+    &__image {}
+}
+
+.gather {
+
+    &__wrapper {}
+
+    &__text {}
+
+    &__title {}
+
+    &__subtitle {}
+
+    &__shop {}
+
+    &__image {}
+}
+
+.footer {
+
+    &__nav {}
+
+    &__list {}
+
+    &__link {}
+}

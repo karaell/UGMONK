@@ -277,3 +277,34 @@ h6 {
   -ms-grid-column-span: 2;
   grid-column: span 2;
 }
+.footer {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: minmax(auto, 50px) 1fr minmax(auto, 50px);
+  -ms-grid-columns: minmax(auto, 140px) minmax(auto, 1160px) minmax(auto, 140px);
+      grid-template: minmax(auto, 50px) 1fr minmax(auto, 50px)/minmax(auto, 140px) minmax(auto, 1160px) minmax(auto, 140px);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  justify-items: center;
+}
+.footer__nav {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+}
+.footer__list {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr;
+  -ms-grid-columns: 1fr 50px 1fr;
+      grid-template: 1fr/repeat(2, 1fr);
+  gap: 15px 50px;
+  font-size: 15px;
+}
+.footer__link a {
+  color: #000;
+}

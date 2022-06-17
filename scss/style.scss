@@ -232,26 +232,24 @@ h6 {
     &__image {}
 }
 
-.gather {
-
-    &__wrapper {}
-
-    &__text {}
-
-    &__title {}
-
-    &__subtitle {}
-
-    &__shop {}
-
-    &__image {}
-}
-
 .footer {
+    display: grid;
+    grid-template: minmax(auto, 50px) 1fr minmax(auto, 50px) / minmax(auto, 140px) minmax(auto, 1160px) minmax(auto, 140px);
+    justify-content: center;
+    justify-items: center;
+    &__nav {
+        grid-row: 2/3;
+        grid-column: 2/3;
+    }
 
-    &__nav {}
+    &__list {
+        display: grid;
+        grid-template: 1fr / repeat(2, 1fr);
+        gap: 15px 50px;
+        font-size: 15px;
+    }
 
-    &__list {}
-
-    &__link {}
+    &__link a {
+        color: #000;
+    }
 }

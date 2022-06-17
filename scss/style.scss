@@ -138,7 +138,8 @@ h6 {
     display: grid;
     grid-template: minmax(auto, 517px) 1fr 1fr minmax(auto, 30px) / minmax(auto, 140px) minmax(auto,1160px) minmax(auto, 140px);
     align-items: end;
-    background: url('/img/section-one-big-image.png') 0 0/cover no-repeat;;
+    background: url('../img/section-one-big-image.png') 0 0/cover no-repeat;;
+    justify-content: center;
 
     &__title {
         font-size: 18px;
@@ -158,6 +159,7 @@ h6 {
 .products {
     display: grid;
     grid-template: minmax(auto, 50px) 1fr minmax(auto, 50px) / minmax(auto, 140px) minmax(auto, 1160px) minmax(auto, 140px);
+    justify-content: center;
     &__items {
         display: grid;
         grid-template: 1fr 1fr / repeat(4, minmax(auto, 275px));
@@ -192,33 +194,36 @@ h6 {
 .catalogs {
     background-color: #CED3CA;
     display: grid;
-    grid-template: minmax(auto, 113px) auto minmax(auto, 92px) 1fr minmax(auto, 113px) / 1fr;
+    grid-template: minmax(auto, 50px) auto minmax(auto, 50px) 1fr minmax(auto, 50px) / minmax(auto, 140px) minmax(auto, 1160px) minmax(auto, 140px);
     justify-items: center;
-    padding: 0 140px;
+    justify-content: center;
     &__title {
-        font-size: 30px;
-        line-height: 36px;
+        font-size: 25px;
+        line-height: 30px;
         grid-row: 2/3;
-        max-width: 550px;
+        grid-column: 2/3;
+        max-width: 500px;
         width: 100%;
+        text-align: center;
     }
 
     &__items {
         grid-row: 4/5;
+        grid-column: 2/3;
         display: grid;
         grid-template: repeat(2, 1fr) / repeat(2, 1fr);
-        column-gap: 116px;
+        column-gap: 100px;
         row-gap: 70px;
     }
     &__name {
-        font-size: 16px;
+        font-size: 20px;
         // line-height: 20px;
     }
 
     &__item {
         display: grid;
         grid-template-rows: repeat(2, auto);
-        row-gap: 5px;
+        row-gap: 8px;
         &_big {
             grid-column: span 2;
         }

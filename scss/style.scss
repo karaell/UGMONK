@@ -105,10 +105,6 @@ h6 {
         grid-column: 2 / 3;
     }
 
-    &__nav {
-        
-    }
-
     &__list {
         display: grid;
         grid-auto-flow: column;
@@ -133,7 +129,7 @@ h6 {
     grid-area: main;
 }
 
-.section-one {
+.general {
     color: #fff;
     display: grid;
     grid-template: minmax(auto, 517px) 1fr 1fr minmax(auto, 30px) / minmax(auto, 140px) minmax(auto,1160px) minmax(auto, 140px);
@@ -150,7 +146,6 @@ h6 {
 
     &__subtitle {
         font-size: 15px;
-        // border-bottom: 1px solid #000;
         grid-column: 2/3;
         grid-row: 3/4;
     }
@@ -217,7 +212,6 @@ h6 {
     }
     &__name {
         font-size: 20px;
-        // line-height: 20px;
     }
 
     &__item {
@@ -228,8 +222,6 @@ h6 {
             grid-column: span 2;
         }
     }
-
-    &__image {}
 }
 
 .footer {

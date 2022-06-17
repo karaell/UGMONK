@@ -139,7 +139,7 @@ h6 {
   grid-area: main;
 }
 
-.section-one {
+.general {
   color: #fff;
   display: -ms-grid;
   display: grid;
@@ -154,7 +154,7 @@ h6 {
       -ms-flex-pack: center;
           justify-content: center;
 }
-.section-one__title {
+.general__title {
   font-size: 18px;
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
@@ -164,7 +164,7 @@ h6 {
   grid-row: 2/3;
   padding-bottom: 5px;
 }
-.section-one__subtitle {
+.general__subtitle {
   font-size: 15px;
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
@@ -277,6 +277,7 @@ h6 {
   -ms-grid-column-span: 2;
   grid-column: span 2;
 }
+
 .footer {
   display: -ms-grid;
   display: grid;
